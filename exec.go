@@ -69,7 +69,7 @@ func (c *Cmd) Run() error {
 		return nil
 	}
 
-	return c.cmd.Wait()
+	return c.Wait()
 }
 
 // CombinedOutput runs the command, waits for it to exit, and returns
