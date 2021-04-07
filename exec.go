@@ -66,7 +66,7 @@ func (c *Cmd) Start() error {
 func (c *Cmd) Run() error {
 	err := c.Start()
 	if err != nil {
-		return nil
+		return err
 	}
 
 	return c.cmd.Wait()
